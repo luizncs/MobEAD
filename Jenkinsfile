@@ -1,8 +1,8 @@
 pipeline {  
     environment {
       registry = "luizncs/mobead_image_build"
-      registryCredential = 'dockerhub'
-      dockerImage = ''
+      registryCredential = 'DOCKERHUB'
+      dockerImage = '${image}'
     }
     agent any 
     stages { 
